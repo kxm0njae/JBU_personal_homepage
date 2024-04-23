@@ -1,9 +1,13 @@
-var intro_typing = [' Web_Developer', ' JBU_Univ_Student', ' Freelancer'];
+var intro_typing = [
+  ' 웹 개발자입니다.',
+  ' 중부대학교 학생입니다.',
+  ' 프리랜서입니다.',
+];
 var index = 0;
 var i = 0;
 var speed = 100;
 var deleting = false;
-var pauseDuration = 1000; // 1초 동안 멈춤
+var pauseDuration = 500;
 var isPausing = false;
 
 window.onload = function typeWriter() {
@@ -17,8 +21,8 @@ window.onload = function typeWriter() {
       setTimeout(typeWriter, speed);
     } else if (!deleting && i >= text.length) {
       deleting = true;
-      isPausing = true; // 일시 정지 시작
-      setTimeout(typeWriter, pauseDuration); // 모든 글자를 출력한 후 멈추는 시간
+      isPausing = true;
+      setTimeout(typeWriter, pauseDuration);
     } else if (deleting && i >= 0) {
       outputElement.textContent = text.substring(0, i);
       i--;
@@ -29,10 +33,28 @@ window.onload = function typeWriter() {
       setTimeout(typeWriter, speed);
     }
   } else {
-    // 일시 정지 상태에서는 기다린 후 다음 단계로 이동
     setTimeout(function () {
       isPausing = false;
       typeWriter();
     }, pauseDuration);
   }
 };
+
+function fadeInElements() {
+  let sections = document.querySelectorAll('.fade-in');
+
+  sections.forEach((section) => {
+    let sectionBounding = section.getBoundingClientRect();
+    if (
+      sectionBounding.top < window.innerHeight &&
+      sectionBounding.bottom >= 0
+    ) {
+      section.classList.add('fade-in-visible');
+    } else {
+      section.classList.remove('fade-in-visible');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', fadeInElements);
+window.addEventListener('scroll', fadeInElements);
