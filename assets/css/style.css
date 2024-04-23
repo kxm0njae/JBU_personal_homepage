@@ -261,6 +261,7 @@ input[type='submit']:hover {
     display: none;
   }
   section {
+    transition: 2s;
     padding-left: 1.5rem;
     padding-right: 1rem;
     margin-left: 0;
@@ -294,6 +295,10 @@ input[type='submit']:hover {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .tm p {
+    font-size: 1rem;
   }
 
   .tm img {
