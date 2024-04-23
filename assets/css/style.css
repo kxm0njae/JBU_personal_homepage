@@ -247,7 +247,12 @@ input[type='submit']:hover {
   background-color: rgb(0, 32, 114);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 530px) {
+  html {
+    scroll-behavior: smooth;
+    width: 32rem;
+  }
+
   header {
     display: none;
   }
@@ -273,6 +278,16 @@ input[type='submit']:hover {
   table td {
     font-size: 1rem;
   }
+
+  .tm img {
+    width: 27rem;
+  }
+
+  .gallary img {
+    max-width: 27rem;
+    max-height: 20rem;
+  }
+
   form {
     width: 27rem;
   }
