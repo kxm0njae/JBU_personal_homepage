@@ -247,7 +247,7 @@ input[type='submit']:hover {
   background-color: rgb(0, 32, 114);
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 450px) {
   html {
     scroll-behavior: smooth;
     width: 32rem;
