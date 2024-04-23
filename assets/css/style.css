@@ -264,10 +264,16 @@ input[type='submit']:hover {
     background-size: cover;
     background-image: url(../img/main_bg.avif);
   }
+  #profile_pic_1 {
+    margin-right: 0;
+    width: 27rem;
+    float: left;
+  }
+
   table td {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   form {
-    width: 35rem;
+    width: 27rem;
   }
 }
