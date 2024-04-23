@@ -252,13 +252,20 @@ input[type='submit']:hover {
     display: none;
   }
   section {
-    max-width: 768px
-    padding-left: 2rem;
-    padding-right: 2rem;
+    max-width: 768px;
+    padding: 2rem;
     margin-left: 0;
   }
+  #Home {
+    color: white;
+    font-size: 3rem;
+    padding: 2rem;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../img/main_bg.avif);
+  }
   table td {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   form {
     width: 35rem;
