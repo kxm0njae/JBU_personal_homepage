@@ -242,33 +242,30 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-body {
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
 input[type='submit']:hover {
   transition: 0.3s;
   background-color: rgb(0, 32, 114);
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 768px) {
+  * {
+    padding-right: 0;
+    margin-right: 0;
+  }
+
   html {
     scroll-behavior: smooth;
-    width: 32rem;
   }
 
   header {
     display: none;
   }
   section {
-    max-width: 31rem;
-    padding: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
     margin-left: 0;
   }
+
   #Home {
     color: white;
     font-size: 3rem;
@@ -277,8 +274,9 @@ input[type='submit']:hover {
     background-size: cover;
     background-image: url(../img/main_bg.avif);
   }
+
   #profile_pic_1 {
-    margin-right: 0;
+    margin-right: 1rem;
     width: 27rem;
     float: left;
   }
@@ -287,13 +285,24 @@ input[type='submit']:hover {
     font-size: 1rem;
   }
 
+  #About table tr td {
+    padding-right: 1rem;
+  }
+
+  .tm {
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .tm img {
-    width: 27rem;
+    width: 9.6rem;
+    margin-right: 0;
   }
 
   .gallary img {
-    max-width: 27rem;
-    max-height: 20rem;
+    max-width: 12rem;
   }
 
   form {
