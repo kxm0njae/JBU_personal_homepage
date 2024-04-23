@@ -246,3 +246,21 @@ input[type='submit']:hover {
   transition: 0.3s;
   background-color: rgb(0, 32, 114);
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  section {
+    max-width: 768px
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 0;
+  }
+  table td {
+    font-size: 1rem;
+  }
+  form {
+    width: 35rem;
+  }
+}
