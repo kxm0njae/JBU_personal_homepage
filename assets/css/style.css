@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  width: 4rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+header {
+  width: 18rem;
+  height: 400rem;
+  display: block;
+  position: fixed;
+  float: left;
+  background-color: blue;
+}
+
+#profile_pic {
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+section {
+  margin-left: 18rem;
+  min-height: 100vh;
+}
+
+#Home {
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/home_bg.jpg);
+}
